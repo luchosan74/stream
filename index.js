@@ -4,7 +4,7 @@ var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var port = process.env.PORT || 3000;
 
-app.use(express.static(__dirname + '/publico'));
+app.use(express.static(__dirname + '/'));
 
 http.listen(port, function(){
     console.log('Servidor escuchando en: %s', port)
